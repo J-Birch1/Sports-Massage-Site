@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JSB Sports Massage Therapy</title>
   <meta name="description" content="JSB Sports Massage Therapy based at The Physique Club, Loughborough. Book by Instagram DM or email." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <div class="brand">
+      <a href="#" class="brand">
         <img src="images/logo.jpg" alt="JSB Sports Massage Therapy logo" class="logo" />
-        <div class="brand-text">
-          <span>JSB Sports Massage Therapy</span>
-        </div>
-      </div>
-      <nav>
+        <span>JSB Sports Massage Therapy</span>
+      </a>
+
+      <nav class="main-nav">
         <a href="#about">About</a>
         <a href="#benefits">Benefits</a>
         <a href="#prices">Prices</a>
@@ -29,17 +31,30 @@
     <div class="container hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Based at The Physique Club</p>
-        <h1>In-house sports massage therapist in Loughborough</h1>
+        <h1>Professional sports massage in Loughborough</h1>
         <p class="hero-text">
-          DM or email to book your session today. Helping active people reduce muscle tension, recover better, and stay on top of injuries.
+          In-house sports massage therapist. DM or email to book your session today and stay on top of recovery, muscle tension, and injury prevention.
         </p>
-        <div class="hero-buttons">
+
+        <div class="hero-actions">
           <a class="btn primary" href="https://instagram.com/jsbsportsmassage" target="_blank" rel="noopener noreferrer">Book by Instagram</a>
           <a class="btn secondary" href="mailto:jsbsportsmassage@outlook.com">Book by Email</a>
         </div>
+
+        <div class="social-links">
+          <a href="https://instagram.com/jsbsportsmassage" target="_blank" rel="noopener noreferrer" class="social-link">
+            <img src="https://cdn.simpleicons.org/instagram/16233f" alt="" width="18" height="18" loading="lazy" />
+            <span>@jsbsportsmassage</span>
+          </a>
+
+          <a href="mailto:jsbsportsmassage@outlook.com" class="social-link">
+            <span class="icon-circle">✉</span>
+            <span>jsbsportsmassage@outlook.com</span>
+          </a>
+        </div>
       </div>
 
-      <div class="hero-card">
+      <div class="hero-panel">
         <img src="images/logo.jpg" alt="JSB Sports Massage Therapy logo" class="hero-logo" />
       </div>
     </div>
@@ -50,61 +65,63 @@
       <div class="container narrow">
         <h2>About</h2>
         <p>
-          JSB Sports Massage Therapy is based at The Physique Club, 4 Waldron Court, Loughborough, LE11 5GD. The service is designed for gym-goers, runners, and active people looking to reduce muscle tension, improve recovery, and reduce injury risk.
+          JSB Sports Massage Therapy is based at The Physique Club, 4 Waldron Court, Loughborough, LE11 5GD. The service is for gym-goers, runners, and active people who want to move better, recover faster, and reduce injury risk.
         </p>
       </div>
     </section>
 
-    <section class="section" id="benefits">
-      <div class="container">
-        <div class="cards">
-          <div class="card">
-            <h2>Benefits of Sports Massage</h2>
-            <ul>
-              <li>Reduces muscle tension</li>
-              <li>Aids in recovery</li>
-              <li>Reduces risk of injuries</li>
-            </ul>
-          </div>
+    <section class="section muted-section" id="benefits">
+      <div class="container cards">
+        <article class="card">
+          <p class="section-label">Why book</p>
+          <h2>Benefits of sports massage</h2>
+          <ul>
+            <li>Reduces muscle tension.</li>
+            <li>Aids in recovery.</li>
+            <li>Reduces risk of injuries.</li>
+          </ul>
+        </article>
 
-          <div class="card" id="prices">
-            <h2>Price List</h2>
-            <ul class="price-list">
-              <li><span>30 mins</span><span>£30</span></li>
-              <li><span>1 hour</span><span>£40</span></li>
-            </ul>
-          </div>
-        </div>
+        <article class="card" id="prices">
+          <p class="section-label">Pricing</p>
+          <h2>Price list</h2>
+          <ul class="price-list">
+            <li><span>30 mins</span><strong>£30</strong></li>
+            <li><span>1 hour</span><strong>£40</strong></li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
+    <section class="section" id="contact">
       <div class="container contact-grid">
-        <div class="contact-card">
-          <h2>Contact</h2>
-          <p><strong>Instagram:</strong> <a href="https://instagram.com/jsbsportsmassage" target="_blank" rel="noopener noreferrer">@jsbsportsmassage</a></p>
-          <p><strong>Email:</strong> <a href="mailto:jsbsportsmassage@outlook.com">jsbsportsmassage@outlook.com</a></p>
-          <p><strong>Location:</strong> The Physique Club, 4 Waldron Court, Loughborough, LE11 5GD</p>
-        </div>
+        <article class="contact-card">
+          <p class="section-label">Contact</p>
+          <h2>Book your session</h2>
+          <p>DM on Instagram or email to arrange your appointment.</p>
 
-        <div class="contact-card">
-          <h2>Find Us</h2>
-          <p>Based at The Physique Club in Loughborough.</p>
+          <div class="contact-list">
+            <a href="https://instagram.com/jsbsportsmassage" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <img src="https://cdn.simpleicons.org/instagram/57b7c9" alt="" width="20" height="20" loading="lazy" />
+              <span>@jsbsportsmassage</span>
+            </a>
+
+            <a href="mailto:jsbsportsmassage@outlook.com" class="contact-item">
+              <span class="icon-circle">✉</span>
+              <span>jsbsportsmassage@outlook.com</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="contact-card">
+          <p class="section-label">Location</p>
+          <h2>Find us</h2>
+          <p>The Physique Club<br>4 Waldron Court<br>Loughborough LE11 5GD</p>
           <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=The+Physique+Club,+4+Waldron+Court,+Loughborough,+LE11+5GD" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-section">
-      <div class="container cta-box">
-        <h2>Book your session today</h2>
-        <p>DM on Instagram or email to arrange your sports massage appointment.</p>
-        <div class="hero-buttons">
-          <a class="btn primary" href="https://instagram.com/jsbsportsmassage" target="_blank" rel="noopener noreferrer">DM on Instagram</a>
-          <a class="btn secondary" href="mailto:jsbsportsmassage@outlook.com">Email to Book</a>
-        </div>
+        </article>
       </div>
     </section>
   </main>
 </body>
+</html>
 </html>
